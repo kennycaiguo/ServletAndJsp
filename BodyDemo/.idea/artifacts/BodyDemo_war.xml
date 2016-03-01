@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="BodyDemo:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="com.servlet.body.war">
+      <element id="artifact" artifact-name="BodyDemo:war exploded" />
+    </root>
+  </artifact>
+</component>
