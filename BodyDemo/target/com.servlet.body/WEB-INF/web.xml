@@ -10,13 +10,27 @@
     <servlet-name>BodyServlet</servlet-name>
     <servlet-class>cc.openhome.BodyServlet</servlet-class>
   </servlet>
+
+  <servlet>
+    <servlet-name>uploadDo</servlet-name>
+    <servlet-class>cc.openhome.uploadServlet</servlet-class>
+  </servlet>
+
   <servlet-mapping>
     <servlet-name>BodyServlet</servlet-name>
     <url-pattern>/body</url-pattern>
   </servlet-mapping>
 
+  <servlet-mapping>
+    <servlet-name>uploadDo</servlet-name>
+    <url-pattern>/upload</url-pattern>
+  </servlet-mapping>
+
+
+
+
   <welcome-file-list>
-    <welcome-file>from.html</welcome-file>
+    <welcome-file>upload.html</welcome-file>
   </welcome-file-list>
 
 </web-app>
