@@ -57,7 +57,7 @@ public class Register extends HttpServlet {
         if(username == null) {
             return true;
         }
-        String sql = "select username from userdata where username=?";
+        String sql = "select username from usersdata where username=?";
         try {
             conn = DBUtils.getConnection();
             ps = conn.prepareStatement(sql);
@@ -83,7 +83,7 @@ public class Register extends HttpServlet {
     }
 
     private void createUserDate(String email, String username, String passwd) {
-        String sql = "insert into userdata(username, passwd, email) values(?, ?, ?)";
+        String sql = "insert into usersdata(username, passwd, email) values(?, ?, ?)";
         try {
             conn = DBUtils.getConnection();
             ps = conn.prepareStatement(sql);

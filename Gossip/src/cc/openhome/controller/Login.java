@@ -24,20 +24,21 @@ public class Login extends HttpServlet {
         resp.setContentType("text/html;chatset=utf-8");
         String username = req.getParameter("username");
         String passwd = req.getParameter("passwd");
+        String page = "/index.html";
         //验证用户名密码
         if(checkLogin(username, passwd)) {
-            req.getRequestDispatcher("member.view").forward(req, resp);
-        }else {
-            //登陆验证失败，重定向回首页
-            resp.sendRedirect("index.html");
+//            req.getRequestDispatcher("member.view").forward(req, resp);
+            req.getSession().setAttribute("login", username);
+            page = "member.view";
         }
+        resp.sendRedirect(page);
     }
 
     private boolean checkLogin(String username, String passwd) throws IOException {
         if(username != null && passwd != null) {
             try {
                 String md5Passwd = MD5Util.md5Encode(passwd);
-                String sql = "select username, passwd, email from userdata where username=?";
+                String sql = "select username, passwd, email from usersdata where username=?";
                 conn = DBUtils.getConnection();
                 ps = conn.prepareStatement(sql);
                 ps.setString(1, username);

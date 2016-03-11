@@ -9,7 +9,7 @@
 
     <servlet>
         <servlet-name>error.do</servlet-name>
-        <servlet-class>cc.openhome.controller.Error</servlet-class>
+        <servlet-class>cc.openhome.view.Error</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>error.do</servlet-name>
@@ -18,7 +18,7 @@
 
     <servlet>
         <servlet-name>success.do</servlet-name>
-        <servlet-class>cc.openhome.controller.Success</servlet-class>
+        <servlet-class>cc.openhome.view.Success</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>success.do</servlet-name>
@@ -37,7 +37,7 @@
 
     <servlet>
         <servlet-name>member.do</servlet-name>
-        <servlet-class>cc.openhome.controller.Member</servlet-class>
+        <servlet-class>cc.openhome.view.Member</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>member.do</servlet-name>
@@ -51,5 +51,32 @@
     <servlet-mapping>
         <servlet-name>register.do</servlet-name>
         <url-pattern>/register.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>message.do</servlet-name>
+        <servlet-class>cc.openhome.controller.Message</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>message.do</servlet-name>
+        <url-pattern>/message.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>delete</servlet-name>
+        <servlet-class>cc.openhome.controller.Delete</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>delete</servlet-name>
+        <url-pattern>/delete.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>logout</servlet-name>
+        <servlet-class>cc.openhome.controller.Logout</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logout</servlet-name>
+        <url-pattern>/logout.do</url-pattern>
     </servlet-mapping>
 </web-app>
