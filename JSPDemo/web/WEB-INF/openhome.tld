@@ -5,8 +5,9 @@
     http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
     <tlib-version>1.0</tlib-version>
     <short-name>openhome</short-name>
-    <uri>http://openhome.cc/Util</uri>
+    <uri>http://cc.openhome.Util</uri>
     <function>
+        <description>Collection Length</description>
         <name>length</name>
         <function-class>cc.openhome.Util</function-class>
         <function-signature>int length(java.util.Collection)</function-signature>

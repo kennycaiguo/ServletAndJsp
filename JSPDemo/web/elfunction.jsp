@@ -1,4 +1,6 @@
-<%@ taglib prefix="Util" uri="http://openhome.cc/Util" %>
+<%@ page import="java.util.Collection" %>
+<%@ page import="java.util.LinkedList" %>
+<%@ taglib prefix="Util" uri="http://cc.openhome.Util" %>
 <%--
   Created by IntelliJ IDEA.
   User: zhuxinquan
@@ -12,6 +14,11 @@
     <title>自定义EL函数</title>
 </head>
 <body>
-    ${Util:length(requestScope.someList)}
+<%
+    Collection<String> c = new LinkedList<>();
+    c.add("123");
+    c.add("456");
+%>
+    ${ Util:length(c) }
 </body>
 </html>
