@@ -1,15 +1,12 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="Gossip1.1.2:war exploded">
-    <output-path>$PROJECT_DIR$/target/zhuxinquan</output-path>
+  <artifact type="exploded-war" name="JSTLExercise:war exploded">
+    <output-path>$PROJECT_DIR$/target/jstl</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="Gossip1.1.2" />
+          <element id="module-output" name="JSTLExercise" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
-          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.38" />
-          <element id="library" level="project" name="Maven: javax.servlet.jsp:jsp-api:2.2.1-b03" />
           <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
           <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
           <element id="library" level="project" name="Maven: xalan:xalan:2.7.1" />
@@ -18,9 +15,9 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/zhuxinquan/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/target/jstl/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="Gossip1.1.2/web/Web" />
+      <element id="javaee-facet-resources" facet="JSTLExercise/web/Web" />
     </root>
   </artifact>
 </component>

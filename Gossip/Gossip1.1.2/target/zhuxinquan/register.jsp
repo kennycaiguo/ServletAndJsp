@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.ArrayList" %>
 <%@page pageEncoding="UTF-8" isELIgnored="false" %>
@@ -9,7 +10,7 @@
 </head>
 <body>
 <h1>会员注册</h1>
-<%
+<%--<%
     List<String> errors;
     errors = (List<String>) request.getAttribute("errors");
     if(errors != null){
@@ -19,7 +20,15 @@
 <%
         }
     }
-%>
+%>--%>
+<c:if test="${requestScope.errors != null}">
+    <h1>新增会员失败</h1>
+    <ul style="color: crimson">
+        <c:forEach var="error" items="${requestScope.errors}">
+            <li>${error}</li>
+        </c:forEach>
+    </ul>
+</c:if>
 <form method='post' action='/register.do'>
     <table bgcolor=#cccccc>
         <tr>
