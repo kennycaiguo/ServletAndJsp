@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+        version="2.0">
+
+    <tlib-version>2.0</tlib-version>
+    <short-name>f</short-name>
+    <uri>http://0error0warning.cn/jstl/fake</uri>
+
+    <!-- Invoke 'Generate' action to add tags or functions -->
+    <tag>
+        <name>if</name>
+        <tag-class>IfTag</tag-class>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <name>test</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>boolean</type>
+        </attribute>
+    </tag>
+
+</taglib>
