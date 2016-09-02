@@ -9,6 +9,8 @@ import org.apache.struts.action.ActionMapping;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.sql.Connection;
+import java.sql.Statement;
 
 /**
  * Created by zhuxinquan on 16-8-30.

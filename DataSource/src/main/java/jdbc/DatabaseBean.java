@@ -8,6 +8,7 @@ import java.io.Serializable;
 import java.sql.Connection;
 import java.sql.SQLException;
 
+
 /**
  * Created by zhuxinquan on 16-8-21.
  */
@@ -17,7 +18,7 @@ public class DatabaseBean implements Serializable {
     public DatabaseBean(){
         try {
             Context initContext = new InitialContext();
-            Context envContext = (Context)initContext.lookup("jdbc:/comp/env");
+            Context envContext = (Context)initContext.lookup("java:/comp/env");
             dataSource = (DataSource) envContext.lookup("jdbc/demo");
         } catch (NamingException e) {
             e.printStackTrace();

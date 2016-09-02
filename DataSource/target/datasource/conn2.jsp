@@ -14,7 +14,7 @@
 </head>
 <body>
     <c:choose>
-        <c:when test="${db.isConnectedOK()}">连接成功</c:when>
+        <c:when test="${db.connectedOK}">连接成功</c:when>
         <c:otherwise>连接失败</c:otherwise>
     </c:choose>
 </body>
