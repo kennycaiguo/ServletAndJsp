@@ -1,4 +1,5 @@
 <%@ page import="java.util.List" %>
+<%@ page import="sfd.Count" %>
 <%@page isELIgnored="false" language="java" pageEncoding="UTF-8" %>
 <!doctype html>
 <html ng-app="myApp" lang="zh-CN">
@@ -121,7 +122,8 @@
                     <label name="captcha">验证码&nbsp;&nbsp;&nbsp;</label><img width="80px" height="30px" src="./image.do">
                     <input type="text" class="form-control" name="captcha"/>
                 </div>
-                <input type="button" class="btn btn-primary btn-lg btn-block" value="Submit" id="obtn2">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="Submit" id="obtn2"><br>
+                <h2 style="text-align:center; color: white;">当前已报名：<span style="color: red; font-size: 30px"><%= Count.getCount()%></span></h2>
             </div>
         </form>
     </div>
