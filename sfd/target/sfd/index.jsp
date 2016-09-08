@@ -78,7 +78,7 @@
                 %>
                 <div class="sid">
                     <label name="sid">学号</label>
-                    <input type="text" value=<%=(String)request.getAttribute("sno")%> class="form-control" name="sid" required placeholder="学号"></div>
+                    <input type="text" value='<%=(String)request.getAttribute("sno")%>' class="form-control" name="sid" required placeholder="学号"></div>
                 <%
                     }else {
                 %>
@@ -93,7 +93,7 @@
                 %>
                 <div class="name">
                     <label name="name">姓名</label>
-                    <input type="text" value=<%=(String)request.getAttribute("name")%> class="form-control" name="name"  required placeholder="姓名" ></div>
+                    <input type="text" value='<%=(String)request.getAttribute("name")%>' class="form-control" name="name"  required placeholder="姓名" ></div>
                 <%
                 }else {
                 %>
@@ -108,7 +108,7 @@
                 %>
                 <div class="email">
                     <label name="email">邮箱</label>
-                    <input type="text" value=<%=(String)request.getAttribute("email")%> class="form-control" name="email" required placeholder="邮箱" ng-focus></div>
+                    <input type="text" value='<%=(String)request.getAttribute("email")%>' class="form-control" name="email" required placeholder="邮箱" ng-focus></div>
                 <%
                 }else {
                 %>
