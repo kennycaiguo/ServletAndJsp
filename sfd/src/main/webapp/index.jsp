@@ -127,18 +127,6 @@
             </div>
         </form>
     </div>
-    <%--<div class="row">--%>
-        <%--<footer class="copyright col-xs-12 col-md-12">--%>
-            <%--<h3>西邮Linux兴趣小组纳新说明</h3>--%>
-            <%--<hr>--%>
-            <%--<ul class="block-list">--%>
-                <%--<li>如果报名信息填写错误，可重新进行报名</li>--%>
-                <%--<li>我们承诺，仅使用您的教务管理系统帐号与密码进行实名验证，不在纳新系统服务器保存您的教务系统密码等任何隐私信息。</li>--%>
-                <%--<li>您的所有面试记录将在纳新结束后被彻底清除。除非征得您的同意，您的所有信息不会以任何形式对外透露。</li>--%>
-            <%--</ul>--%>
-            <%--<hr>--%>
-        <%--</footer>--%>
-    <%--</div>--%>
     <script src="http://cdn.bootcss.com/jquery/3.0.0-beta1/jquery.js"></script>
     <script src="http://cdn.bootcss.com/angular.js/1.5.0/angular.min.js"></script>
     <script type="text/javascript" src="app.js"></script>

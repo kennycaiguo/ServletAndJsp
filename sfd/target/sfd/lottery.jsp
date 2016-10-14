@@ -109,7 +109,12 @@
 <div class="button">
     <button id="btn">
         开始抽奖
-    </button>
+    </button><br>
+</div>
+<div style="magin:0 auto; text-align: center">
+    <a href="LuckList.jsp" target="_self" style="text-decoration:none;">
+        <span style="color:#a38153;">幸运名单</span>
+    </a>
 </div>
 <script type="text/javascript" src="./js/app.js"></script>
 </body>
