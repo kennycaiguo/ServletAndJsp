@@ -18,7 +18,8 @@
         body{
             margin: 0;
             padding: 0;
-            background: url("http://7xs8o3.com1.z0.glb.clouddn.com/main-bg-compressor.jpg") no-repeat;
+            /*background: url("http://7xs8o3.com1.z0.glb.clouddn.com/main-bg-compressor.jpg") no-repeat;*/
+            background: url(/images/123.jpg) no-repeat;
             background-size: cover;
             z-index: -999;
             background-position: center center;

@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="QQAuth:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/QQAuth_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="QQAuth/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="QQAuth" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Sdk4J" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
